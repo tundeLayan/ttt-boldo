@@ -1,6 +1,6 @@
 # Profold Project Scaffold
 
-This document details the scaffold project, demonstrating the application of our [project organization guidelines](README-GUIDELINE.md). We'll explore the structure, features, and the benefits they bring to to our Next.js development workflow.
+This document details the scaffold project. We'll explore the structure, features, and the benefits they bring to to our Next.js development workflow.
 
 ## Project Overview
 
@@ -12,8 +12,6 @@ The Profold project scaffold is a basic Next.js application with two modules: `u
 -   The `tasks` module, showcasing task management features, including fetching task details and related tasks from an external API.
 
 ## Project Structure: Adherence to Guidelines
-
-The scaffold strictly adheres to the proposed [Next.js 14 Project Structure and Coding Guidelines](README-GUIDELINE.md) we've established:
 
 1.  **Modules:** Each feature is organized into a dedicated module (`users` and `tasks`), promoting separation of concerns and making the codebase easier to navigate.
 
