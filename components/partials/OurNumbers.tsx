@@ -1,4 +1,5 @@
 import React from 'react';
+import { NumbersCard } from '../shared';
 
 const OurNumbers = () => {
     return (
@@ -11,30 +12,18 @@ const OurNumbers = () => {
                 <br className="hidden md:block" /> crowdfunding iteration.
             </h5>
             <div className="flex flex-col gap-10 lg:gap-0 items-center lg:flex-row justify-between text-left">
-                <div className="">
-                    <p className="text-green-100 text-[96px] font-normal leading-[56px] mb-[32px]">
-                        120m
-                    </p>
-                    <p className="font-openSans text-2xl font-normal leading-[36px] text-primary-200">
-                        Cool feature title
-                    </p>
-                </div>
-                <div className="">
-                    <p className="text-green-100 text-[96px] font-normal leading-[56px] mb-[32px]">
-                        10.000
-                    </p>
-                    <p className="font-openSans text-2xl font-normal leading-[36px] text-primary-200">
-                        Cool feature title
-                    </p>
-                </div>
-                <div className="">
-                    <p className="text-green-100 text-[96px] font-normal leading-[56px] mb-[32px]">
-                        240
-                    </p>
-                    <p className="font-openSans text-2xl font-normal leading-[36px] text-primary-200">
-                        Cool feature title
-                    </p>
-                </div>
+                <NumbersCard
+                    value="120m"
+                    subtitle="Cool feature title"
+                />
+                <NumbersCard
+                    value="10.000"
+                    subtitle="Cool feature title"
+                />
+                <NumbersCard
+                    value="240"
+                    subtitle="Cool feature title"
+                />
             </div>
         </section>
     );

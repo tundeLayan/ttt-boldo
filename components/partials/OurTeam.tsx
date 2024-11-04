@@ -2,6 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 
 import aboutAssets from '@/lib/assets/about';
+import { TeamCard } from '../shared';
 
 const OurTeam = () => {
     return (
@@ -20,61 +21,22 @@ const OurTeam = () => {
                     innovator incubator focus.
                 </p>
             </div>
-            <div className="flex flex-col items-center gap-14 lg:gap-0 lg:items-start lg:flex-row justify-between">
-                <div className="text-center lg:text-left">
-                    <div className="relative mb-6">
-                        <Image
-                            src={aboutAssets.leadership1}
-                            width={299}
-                            height={354}
-                            alt="leadership image"
-                            // layout="fill"
-                            objectFit="contain"
-                        />
-                    </div>
-                    <p className="mb-3 text-black font-manrope text-[28px] font-normal leading-[48px]">
-                        Micheal Scott
-                    </p>
-                    <p className="text-primary-300 font-openSans text-xl font-normal leading-8">
-                        General Manager
-                    </p>
-                </div>
-                <div className="">
-                    <div className="relative mb-6">
-                        <Image
-                            src={aboutAssets.leadership2}
-                            width={299}
-                            height={354}
-                            alt="leadership image"
-                            // layout="fill"
-                            objectFit="contain"
-                        />
-                    </div>
-                    <p className="mb-3 text-black font-manrope text-[28px] font-normal leading-[48px]">
-                        Dwight Schrute
-                    </p>
-                    <p className="text-primary-300 font-openSans text-xl font-normal leading-8">
-                        General Manager
-                    </p>
-                </div>
-                <div className="">
-                    <div className="relative mb-6">
-                        <Image
-                            src={aboutAssets.leadership3}
-                            width={299}
-                            height={354}
-                            alt="leadership image"
-                            // layout="fill"
-                            objectFit="contain"
-                        />
-                    </div>
-                    <p className="mb-3 text-black font-manrope text-[28px] font-normal leading-[48px]">
-                        Pam Beetsley
-                    </p>
-                    <p className="text-primary-300 font-openSans text-xl font-normal leading-8">
-                        General Manager
-                    </p>
-                </div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-[51px] w-full ">
+                <TeamCard
+                    image={aboutAssets.leadership1}
+                    role="General Manager"
+                    name="Micheal Scott"
+                />
+                <TeamCard
+                    image={aboutAssets.leadership2}
+                    role="General Manager"
+                    name="Dwight Schrute"
+                />
+                <TeamCard
+                    image={aboutAssets.leadership3}
+                    role="General Manager"
+                    name="Pam Beetsley"
+                />
             </div>
         </section>
     );

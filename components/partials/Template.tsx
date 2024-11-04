@@ -11,10 +11,10 @@ const Template = () => {
                     An enterprise template to ramp
                     <br className="hidden md:block" /> up your company website
                 </p>
-                <form className="flex gap-6 justify-center h-[60px]">
+                <form className="flex md:gap-6 justify-center h-[60px]">
                     <Input
                         placeholder="Your email address"
-                        className="rounded-[240px] py-3 pl-8 w-[370px] h-full font-openSans text-xl font-normal leading-8"
+                        className="rounded-[240px] py-3 md:pl-8 w-7/12 md:w-[370px] h-full font-openSans text-xl font-normal leading-8 text-primary-100"
                     />
                     <Button
                         variant="secondary"

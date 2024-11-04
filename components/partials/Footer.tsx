@@ -2,6 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 
 import { FooterLogo } from '@/app/_module/components/icons';
+import Tag from '../ui/tag';
 
 const Footer = () => {
     return (
@@ -25,19 +26,19 @@ const Footer = () => {
                         </h5>
                         <div className="flex flex-col gap-6">
                             <Link
-                                className="font-openSans text-base font-normal leading-[32px] hover:underline "
+                                className="font-openSans text-base font-normal leading-[32px] hover:underline  w-fit"
                                 href="#"
                             >
                                 Home
                             </Link>
                             <Link
-                                className=" font-openSans text-base font-normal leading-[32px] hover:underline"
+                                className=" font-openSans text-base font-normal leading-[32px] hover:underline w-fit"
                                 href="#"
                             >
                                 Products
                             </Link>
                             <Link
-                                className="font-openSans text-base font-normal leading-[32px] hover:underline"
+                                className="font-openSans text-base font-normal leading-[32px] hover:underline w-fit"
                                 href="#"
                             >
                                 Services
@@ -50,19 +51,23 @@ const Footer = () => {
                         </h5>
                         <div className="flex flex-col gap-6">
                             <Link
-                                className="font-openSans text-base font-normal leading-[32px] hover:underline"
+                                className="font-openSans text-base font-normal leading-[32px] hover:underline w-fit"
                                 href="#"
                             >
                                 Home
                             </Link>
                             <Link
-                                className="font-openSans text-base font-normal leading-[32px] hover:underline"
+                                className="font-openSans text-base font-normal leading-[32px] hover:underline w-fit"
                                 href="#"
                             >
                                 Careers
+                                <Tag
+                                    label="Hiring!"
+                                    className="ml-4"
+                                />
                             </Link>
                             <Link
-                                className="font-openSans text-base font-normal leading-[32px] hover:underline"
+                                className="font-openSans text-base font-normal leading-[32px] hover:underline w-fit"
                                 href="#"
                             >
                                 Services
@@ -75,19 +80,19 @@ const Footer = () => {
                         </h5>
                         <div className="flex flex-col gap-6">
                             <Link
-                                className="font-openSans text-base font-normal leading-[32px] hover:underline"
+                                className="font-openSans text-base font-normal leading-[32px] hover:underline w-fit"
                                 href="#"
                             >
                                 Blog
                             </Link>
                             <Link
-                                className="font-openSans text-base font-normal leading-[32px] hover:underline"
+                                className="font-openSans text-base font-normal leading-[32px] hover:underline w-fit"
                                 href="#"
                             >
                                 Products
                             </Link>
                             <Link
-                                className="font-openSans text-base font-normal leading-[32px] hover:underline"
+                                className="font-openSans text-base font-normal leading-[32px] hover:underline w-fit"
                                 href="#"
                             >
                                 Services

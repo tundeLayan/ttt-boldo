@@ -6,54 +6,64 @@ import aboutAssets from '@/lib/assets/about';
 const OurStory = () => {
     return (
         <section className="min-h-screen text-left  mx-auto">
-            <div className="hidden lg:grid grid-cols-1 md:grid-cols-3 grid-rows-2 gap-y-[48px] gap-x-[50px] relative w-10/12 mx-auto top-[-82px]">
-                <div className=" md:block relative w-full h-full pb-[56.25%] col-start-1 row-start-1">
+            <div className="hidden lg:grid grid-cols-1 md:grid-cols-3 grid-rows-2 gap-y-[48px] gap-x-[50px] relative w-10/12 mx-auto top-[-82px] h-[623px]">
+                <div className="rounded-xl overflow-hidden col-span-1 row-span-1 ">
                     <Image
                         src={aboutAssets.header1}
                         alt=""
-                        layout="fill"
-                        objectFit="contain"
-                        className=""
+                        width={300}
+                        height={285}
+                        className="object-contain w-full h-full"
+                        layout="responsive"
+                        quality={90}
                     />
                 </div>
-                <div className="relative w-full h-full pb-[56.25%] row-start-2 col-start-1">
-                    <Image
-                        src={aboutAssets.header2}
-                        alt=""
-                        layout="fill"
-                        objectFit="contain"
-                        className=""
-                    />
-                </div>
-                <div className="relative w-full h-full pb-[112.5%] row-start-1 col-start-2 row-span-2">
+                <div className="rounded-xl overflow-hidden col-span-1 row-span-2 ">
                     <Image
                         src={aboutAssets.header3}
                         alt=""
-                        layout="fill"
-                        objectFit="contain"
-                        className=""
+                        width={250}
+                        height={250}
+                        className="object-contain w-full h-full"
+                        layout="responsive"
+                        quality={90}
                     />
                 </div>
-                <div className="relative w-full h-full pb-[56.25%] row-start-1 col-start-3">
+                <div className="rounded-xl overflow-hidden col-span-1 row-span-1 ">
                     <Image
                         src={aboutAssets.header4}
                         alt=""
-                        layout="fill"
-                        objectFit="contain"
-                        className=""
+                        width={300}
+                        height={285}
+                        className="object-contain w-full h-full"
+                        layout="responsive"
+                        quality={90}
                     />
                 </div>
-                <div className="relative w-full h-full pb-[56.25%] row-start-2 col-start-3">
+                <div className="rounded-xl overflow-hidden col-span-1 row-span-1 ">
+                    <Image
+                        src={aboutAssets.header2}
+                        alt=""
+                        width={300}
+                        height={285}
+                        className="object-contain w-full h-full"
+                        layout="responsive"
+                        quality={90}
+                    />
+                </div>
+                <div className="rounded-xl overflow-hidden col-span-1 row-span-1 ">
                     <Image
                         src={aboutAssets.header5}
                         alt=""
-                        layout="fill"
-                        objectFit="contain"
-                        className=""
+                        width={300}
+                        height={285}
+                        className="object-contain w-full h-full"
+                        layout="responsive"
+                        quality={90}
                     />
                 </div>
             </div>
-            <div className="px-7 md:px-0 py-8 md:py-0 w-full md:w-[800px] mx-auto">
+            <div className="px-7 md:px-5 pt-4 pb-[96px] w-full lg:w-[800px] mx-auto">
                 <h5 className="font-openSans text-xl font-normal leading-[32px] mb-[12px]">
                     Our Story
                 </h5>
