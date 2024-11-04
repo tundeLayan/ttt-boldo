@@ -1,5 +1,4 @@
 import React from 'react';
-import Image from 'next/image';
 
 import aboutAssets from '@/lib/assets/about';
 import { TeamCard } from '../shared';
